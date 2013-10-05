@@ -1,0 +1,10 @@
+ * GtkPlayer -- a GTK+ mplayer's embedder
+ * Copyright (C) 2002 Colin Leroy <colin@colino.net>
+ * 
+ * Released under the GPL
+ 
+ Helps you to embed mplayer in a GtkWidget.
+ This is beta software, needs improvment, specially the Makefile ;-)
+ See gtkplayertester.c to see how to use it.
+ 
+ 

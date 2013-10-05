@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+            "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+
+ <head>
+  <title>GtkPlayer</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Colin Leroy">
+  <meta name="description" content="embed mplayer in a Gtk app">
+  <meta name="keywords" content="gtk, mplayer, widget, embed">
+ </head>
+
+ <body>
+   <h2>GtkPlayer</h2>
+   <hr><br>
+   GtkPlayer is basically a C file allowing you to easily embed mplayer in 
+   a GtkWidget, allowing to display movies in your GTK apps almost as easily 
+   as adding a GtkLabel. It has nothing in common, apart from its name, with
+   <a href=http://sourceforge.net/projects/gtkplayer/ target=_blank>the other
+   gtkplayer</a>, which is a full-featured player.
+   <br><br>
+   Adding a video to your app will be as easy as:
+   <pre>
+    	GtkWidget *box;
+	GtkPlayer *player;
+	
+	box = gtk_vbox_new(FALSE,2);
+	player = gtk_player_new("my_video.file");
+	gtk_box_pack_start(GTK_BOX(box), player->widget,TRUE,TRUE,0);
+	gtk_player_init(player);
+	gtk_widget_show(box);
+	gtk_player_show(player);
+	gtk_player_start(player);
+    </pre>
+    The tarball contains gtkplayer.[ch] and a test C file, allowing you
+    to quickly test the widget. 
+    <br><br>
+    For downloads, CVS and mailing-list, refer to <a href=http://sourceforge.net/projects/gtkplayerembed/>SF.net project page</a>.
+    <br><br><hr>
+    <a href=mailto:colin@colino.net>Mail me (colin at colino.net)</a>
+    <br><br>
+    <a href="http://sf.net/">
+     <img src=http://sourceforge.net/sflogo.php?group_id=62492&type=4 width=125 height=37 border=0 alt="SourceForge.net">
+    </a>
+    
+ </body>
+ 
+</html>

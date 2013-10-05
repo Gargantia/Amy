@@ -1,0 +1,10 @@
+14 sep 2002
+	Add gtk_player_is_running()
+	Add gtk_player_open_file()
+
+14 sep 2002
+	Fix a few memory leaks
+	Don't restart movie on resize
+
+13 sep 2002
+	First version
